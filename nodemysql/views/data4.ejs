@@ -1,0 +1,9 @@
+<%- include('head') %>
+    <h1>Data4</h1> 
+    <% if (locals.articles) { %> 
+        <% articles.forEach(function(item){ %>
+            <h2><%= item.nom %> : <%= item.prix %></h2>
+        <% }) %>
+        <% } %>
+</body>
+</html>
